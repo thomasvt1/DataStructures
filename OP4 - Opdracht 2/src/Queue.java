@@ -1,4 +1,3 @@
-
 public class Queue {
 	
 	private Student start, end;
@@ -13,15 +12,6 @@ public class Queue {
 			return true;
 		}
 			
-		
-		/*
-		Student last = start;
-		
-		while (last.getNext() != null) {
-			last = last.getNext();
-		}
-		*/
-		
 		end.setNext(s);
 		end = s;
 		
@@ -82,6 +72,4 @@ public class Queue {
 			s = s.getNext();
 		}
 	}
-	
-
 }

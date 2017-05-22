@@ -4,7 +4,6 @@ public class Student {
 	private int studentnummer, leeftijd;
 	private String naam, geslacht;
 	private Student next;
-	private int index;
 	
 	public Student(int studentnummer, int leeftijd, String naam, String geslacht) {
 		super();
@@ -72,13 +71,5 @@ public class Student {
 
 	public void setLeeftijd(int leeftijd) {
 		this.leeftijd = leeftijd;
-	}
-
-	public int getIndex() {
-		return index;
-	}
-
-	public void setIndex(int index) {
-		this.index = index;
 	}
 }

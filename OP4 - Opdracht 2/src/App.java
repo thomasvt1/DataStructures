@@ -23,11 +23,16 @@ public class App {
 		
 		List l = new List();
 		
-		l.push(s1, 1);
-		l.push(s2, 2);
-		l.push(s3, 3);
-		l.push(s4, 4);
+		l.push(s1, 0); //1. Janice
+		l.push(s2, 1); //3. Kermit
+		l.push(s3, 2); //4. Gonzo
+		l.push(s4, 3); //2. Swedish
 		
+		l.push(s5, 2);
+		
+		l.printList();
+		
+		/*
 		System.out.println(l.push(s5, 4));
 		
 		l.pop(2);
@@ -39,7 +44,7 @@ public class App {
 		SortedList s = new SortedList();
 		
 		s.printWoman();
-		
+		*/
 		
 	}
 }
