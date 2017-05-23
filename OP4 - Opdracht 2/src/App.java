@@ -21,6 +21,7 @@ public class App {
 		
 		System.out.println("Queue size: " + q.size());
 		
+		/*
 		List l = new List();
 		
 		l.push(s1, 0); //1. Janice
@@ -30,8 +31,8 @@ public class App {
 		
 		l.push(s5, 2);
 		
-		l.printList();
-		
+		l.printNames();
+		*/
 		/*
 		System.out.println(l.push(s5, 4));
 		
@@ -45,6 +46,18 @@ public class App {
 		
 		s.printWoman();
 		*/
+		
+		SortedList sl = new SortedList();
+		
+		sl.push(s1); //1. Janice
+		sl.push(s4); //4. Swedish Chef
+		sl.push(s2); //2. Kermit
+		sl.push(s3); //3. Gonzo
+		sl.push(s5); //5. Miss Piggy
+		
+		sl.printNames();
+		
+		System.out.println("SortedList size: " + sl.size());
 		
 	}
 }

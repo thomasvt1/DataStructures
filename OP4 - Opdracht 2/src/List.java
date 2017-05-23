@@ -48,16 +48,6 @@ public class List {
 		x.setNext(s);
 		s.setNext(a);
 		
-		
-		if (index == 2) {
-			System.out.println("----BEGIN INDEX TWO------");
-			//a.printStudent();
-			//x.printStudent();
-			//s.printStudent();
-			System.out.println("----END INDEX TWO------");
-		}
-		
-		
 		size++;
 		
 		return true;
@@ -104,16 +94,6 @@ public class List {
 		return null;
 	}
 	
-	private boolean indexInUse(int index) {
-		Student s = start;
-		for (int i = 0; i < size; i++) {
-			if (i == index)
-				return true;
-			s = s.getNext();
-		}
-		return false;
-	}
-	
 	public boolean peek(Student s) {
 		Student x = start;
 		for (int i = 0; i < size; i++) {
@@ -123,6 +103,17 @@ public class List {
 		}
 		
 		return false;
+	}
+	
+	public void printNames() {
+		System.out.println("~~~~~~~~~~~~~~");
+		Student s = start;
+		
+		while (s != null) {
+			System.out.println(s.getNaam());
+			s = s.getNext();
+		}
+		System.out.println("~~~~~~~~~~~~~~");
 	}
 	
 	public void printList() {
