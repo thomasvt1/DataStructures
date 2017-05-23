@@ -38,19 +38,16 @@ public class SortedList {
 			x = x.getNext();
 		}
 		
-		System.out.println("x: " + x.getNaam());
-		
 		Student a = start;
 		
 		while (a.getNext() != x) {
-			System.out.println("temp a: " + a.getNaam());
 			a = a.getNext();
 		}
 		
-		System.out.println("a: " + a.getNaam());
-		
 		a.setNext(s);
 		s.setNext(x);
+		
+		size++;
 		
 		return true;
 	}
