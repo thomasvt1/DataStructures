@@ -68,7 +68,14 @@ public class List {
 	public Student tail() {
 		Student s = end;
 		
-		end = null;
+		Student x = start;
+		
+		while (x.getNext() != s) {
+			x = x.getNext();
+		}
+		
+		end = x;
+		size--;
 		
 		return s;
 	}
