@@ -8,12 +8,11 @@ public class Queue {
 		if (start == null) {
 			start = s;
 			end = s;
-			size++;
-			return true;
 		}
-			
-		end.setNext(s);
-		end = s;
+		else {	
+			end.setNext(s);
+			end = s;
+		}
 		
 		size++;
 		
